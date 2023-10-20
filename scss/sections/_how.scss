@@ -1,0 +1,37 @@
+/* =============
+    How
+============= */
+
+#how{
+    
+    div{
+        h1{
+
+        }
+    }
+    p{
+        color: var(--gray)
+
+    }
+    ul{
+        li{
+            padding: 30;
+            border: 2px solid var(--gray);
+            border-radius: 14px;
+
+
+            display:inline-block;
+           
+            img{
+                margin-bottom: 50px;
+            }
+           
+            h2{
+            color:var(--blue)
+            margin-bottom: 10px;
+
+            }
+        }
+    }
+}
+
