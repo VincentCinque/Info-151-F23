@@ -13,7 +13,7 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --light-blue: #ECF9FF;
+  --light-blue: #42b4EE;
   --blue: #060640;
   --green: #00E5CC;
   --gray: #9090A7;
@@ -336,7 +336,12 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--black);
+}
+
 #htlm-tag {
+  background-color: var(--black);
   margin-top: 60px;
 }
 
@@ -366,6 +371,17 @@ ul {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
+.blue-btn {
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 20px 28px;
+  border-radius: 6px;
+}
+
 /* =============
     Forms
 ============= */
@@ -399,11 +415,11 @@ footer {
   color: var(--white);
 }
 footer #footer-top {
-  background-color: var(--blue);
+  background-color: var(--black);
   padding: 80px 0;
 }
-footer #footer-top h1 span {
-  color: var(--green);
+footer #footer-top section img {
+  padding: 15px 0px;
 }
 footer #footer-top p {
   color: var(--gray);
@@ -411,10 +427,40 @@ footer #footer-top p {
 footer #footer-top section h2 {
   margin-bottom: 20px;
 }
-footer #footer-bottom {
-  background-color: var(--bluedark);
-  padding: 27px 0;
+footer #footer-top ul li {
+  color: var(--gray);
+  padding: 10px;
 }
-footer #footer-bottom p span {
-  color: var(--green);
+footer #footer-bottom {
+  background-color: var(--black);
+  padding: 27px 0px;
+}
+footer #footer-bottom p {
+  color: var(--gray);
+}
+footer #form-field {
+  background-color: var(--black);
+}
+footer #form-field h2 {
+  color: var(--white);
+  padding: 15px 0px;
+}
+footer #form-field p {
+  color: var(--gray);
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+footer #form-field form {
+  padding: 9px;
+  background-color: var(--black);
+  border-radius: 1px;
+  border-color: var(--gray);
+  border: solid var(--gray) 2px;
+  border-left: 30px;
+  display: inline-block;
+}
+footer #form-field form input {
+  border: 3px;
+  border-color: var(--gray);
+  background-color: var(--black);
 }

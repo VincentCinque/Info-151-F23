@@ -2,16 +2,18 @@
     Footer
 ============= */
 footer{
-    color:var(--white) ;
+    color:var(--white);
     #footer-top{
-        background-color: var(--blue);
+        background-color: var(--black);
         padding: 80px 0;
 
-        h1{
-            span{
-                color: var(--green);
+        section{
+            img{
+                padding: 15px 0px;
             }
         }
+
+        
         p{
             color: var(--gray);
         }
@@ -20,14 +22,46 @@ footer{
                 margin-bottom: 20px;
             }
         }
+        ul{
+            li{
+                color: var(--gray);
+                padding: 10px;
+            }
+        }
     }
     #footer-bottom{
-        background-color: var(--bluedark);
-        padding: 27px 0;
+        background-color: var(--black);
+        padding: 27px 0px;
         
         p{
-            span{
-                color: var(--green);
+            color: var(--gray);
+        }
+    }
+    #form-field{
+        background-color: var(--black);
+        h2{
+            color: var(--white);
+            padding: 15px 0px;
+            
+        }
+        p{
+            color: var(--gray);
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+        form{
+            padding: 9px;
+            background-color:var(--black);
+            border-radius: 1px;
+            border-color: var(--gray);
+            border: solid var(--gray) 2px;
+            border-left: 30px;
+            display: inline-block;
+            
+            input{
+                border: 3px;
+                border-color: var(--gray);
+                background-color: var(--black);
             }
         }
     }
