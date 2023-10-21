@@ -1,0 +1,23 @@
+/* =============
+    Newsletter
+============= */
+#newsletter{
+    background-color: var(--light-blue);
+    
+    h1{
+    color: var(--blue);
+    }
+    p{
+       color: (--gray); 
+    }
+
+    form{
+        padding: 9px;
+        background-color: var(--white);
+        display: inline-block;
+        border-radius: 6px;
+        input{
+            border: none;
+        }
+    }
+}
