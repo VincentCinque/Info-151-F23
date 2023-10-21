@@ -408,6 +408,9 @@ footer #footer-top h1 span {
 footer #footer-top p {
   color: var(--gray);
 }
+footer #footer-top section h2 {
+  margin-bottom: 20px;
+}
 footer #footer-bottom {
   background-color: var(--bluedark);
   padding: 27px 0;

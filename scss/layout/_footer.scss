@@ -15,6 +15,11 @@ footer{
         p{
             color: var(--gray);
         }
+        section{
+            h2{
+                margin-bottom: 20px;
+            }
+        }
     }
     #footer-bottom{
         background-color: var(--bluedark);
