@@ -1,3 +1,21 @@
 /* =============
     Buttons
 ============= */
+button{
+    border: none;
+}
+
+.blue-btn{
+    background-color: var(--blue);
+    color:var(--white);
+    padding: 20px 28px;
+    border-radius: 6px;
+}
+
+.light-blue-btn{
+    background-color: var(--light-blue);
+    color:var(--white);
+    padding: 20px 28px;
+    border-radius: 6px;
+}
+
