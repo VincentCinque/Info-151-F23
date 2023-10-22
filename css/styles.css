@@ -427,12 +427,15 @@ textarea {
 }
 #plans-startup h3 {
   padding: 5px 0;
+  margin-left: 40px;
 }
 #plans-startup h1 {
   padding: 5px 0;
+  margin-left: 40px;
 }
 #plans-startup p {
   padding: 5px 0;
+  margin-left: 40px;
 }
 #plans-startup button {
   margin: 15px;
@@ -453,6 +456,7 @@ textarea {
 }
 #plans-classic aside p {
   padding: 5px 0;
+  margin-left: 40px;
 }
 #plans-classic aside button {
   margin: 15px;
@@ -465,12 +469,15 @@ textarea {
 }
 #plans-premium h3 {
   padding: 5px 0;
+  margin-left: 40px;
 }
 #plans-premium h1 {
   padding: 5px 0;
+  margin-left: 40px;
 }
 #plans-premium p {
   padding: 5px 0;
+  margin-left: 40px;
 }
 #plans-premium button {
   margin: 15px;
