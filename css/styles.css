@@ -343,6 +343,10 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -416,69 +420,86 @@ textarea {
 /* =============
     Plans
 ============= */
-#plans-top h1 {
-  padding: 30px 0;
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
-#plans-startup {
+#content #plans-top h1 {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#content #plans-top label {
+  margin-left: 50px;
+}
+#content #plans-startup {
   border: solid;
   border-color: var(--gray);
   display: inline-block;
+  margin: auto 0;
 }
-#plans-startup h3 {
+#content #plans-startup h3 {
   padding: 5px 0;
   margin-left: 40px;
 }
-#plans-startup h1 {
+#content #plans-startup h1 {
   padding: 5px 0;
   margin-left: 40px;
 }
-#plans-startup p {
+#content #plans-startup p {
   padding: 5px 0;
   margin-left: 40px;
 }
-#plans-startup button {
+#content #plans-startup button {
   margin: 15px;
 }
-
-#plans-classic {
+#content #plans-classic {
   border: solid;
   border-color: var(--purple);
   display: inline-block;
+  margin-left: auto 0;
 }
-#plans-classic aside h3 {
+#content #plans-classic aside h3 {
   background-color: var(--purple);
   padding: 5px 0;
 }
-#plans-classic aside h1 {
+#content #plans-classic aside h1 {
   background-color: var(--purple);
   padding: 5px 0;
 }
-#plans-classic aside p {
+#content #plans-classic aside p {
   padding: 5px 0;
   margin-left: 40px;
 }
-#plans-classic aside button {
+#content #plans-classic aside button {
   margin: 15px;
 }
-
-#plans-premium {
+#content #plans-premium {
   border: solid;
   border-color: var(--gray);
   display: inline-block;
+  margin-left: auto 0;
 }
-#plans-premium h3 {
+#content #plans-premium h3 {
   padding: 5px 0;
   margin-left: 40px;
 }
-#plans-premium h1 {
+#content #plans-premium h1 {
   padding: 5px 0;
   margin-left: 40px;
 }
-#plans-premium p {
+#content #plans-premium p {
   padding: 5px 0;
   margin-left: 40px;
 }
-#plans-premium button {
+#content #plans-premium button {
   margin: 15px;
 }
