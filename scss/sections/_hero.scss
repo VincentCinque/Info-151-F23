@@ -10,28 +10,37 @@
             background-color: var(--purple);
             border-radius: 14px;
             padding: 22px;
-            display: inline-block;
+            
         }
     }
     #hero-text{
         h1{
             color: var(--white);
             margin-bottom: 15px;
+            display: inline-block;
+            font-size: 300%;
+            font-weight: 600;
             
             
         }
         p{
             color: var(--white);
+            display: flex;
+            font-weight: 400;
+            
+
+
             
         }
         button{
             margin-top: 30px;
+            display: inline-block;
             
         }
     }
     img{
-        margin-top: 30px;
-        display: inline-block;
+        margin-top: 60px;
+        
     }
 }
 #html-tag{
