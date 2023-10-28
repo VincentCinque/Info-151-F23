@@ -437,13 +437,12 @@ footer #footer-top img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-bottom: 10px;
 }
 footer #footer-top p {
   display: inline-block;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-right: 70px;
+  margin-right: 75px;
+  margin-left: -150px;
 }
 footer #footer-top ul {
   list-style: none;
@@ -452,9 +451,21 @@ footer #footer-top ul {
 footer #footer-top ul li {
   padding: 15px;
 }
+footer #footer-top ul li a:link, footer #footer-top ul li a:visited {
+  font-size: 1.25rem;
+  color: var(--gray);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
 footer #footer-bottom {
   background-color: var(--black);
   padding: 27px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 footer #footer-bottom p {
   color: var(--gray);

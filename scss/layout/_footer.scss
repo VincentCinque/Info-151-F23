@@ -14,11 +14,12 @@ footer{
        
        img{
         align-items: flex-start;
+        margin-bottom: 10px;
        }
         p{
         display: inline-block;
-        align-items: flex-start;
-        margin-right: 70px;
+        margin-right: 75px;
+        margin-left: -150px;
        }
        
         ul{
@@ -26,6 +27,15 @@ footer{
             margin: 20px;
             li{
                 padding: 15px;
+
+                a:link, a:visited{
+                    font-size: rem-calc(20);
+                    color: var(--gray);
+                    transition: 0.25s;
+                    
+                }
+                a:hover, a:active{
+                    color: var(--blue);
                 
             }
         
@@ -35,6 +45,8 @@ footer{
     #footer-bottom{
         background-color: var(--black);
         padding: 27px 0px;
+        display: flex;
+        justify-content: center;
         
         
         p{
@@ -73,6 +85,9 @@ footer{
                 display: inline-block;
                 align-items: flex-end;
             }
+
+
+        
         }
     }
 }
