@@ -3,74 +3,39 @@
 ============= */
 footer{
     color:var(--white);
+    list-style: none;
     #footer-top{
         background-color: var(--black);
-        padding: 80px 0;
+        padding: 50px 0;
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+        margin-left: 20px;
+       
+       img{
+        align-items: flex-start;
+       }
+        p{
         display: inline-block;
-
-        
-
-        section{
-            img{
-                padding: 15px 0px;
-                display: inline-block;
-            }
-        }
-
-        
-        p{
-            color: var(--gray);
-        }
-        section{
-            h2{
-                margin-bottom: 20px;
-            }
-        }
+        align-items: flex-start;
+        margin-right: 70px;
+       }
+       
         ul{
+            list-style: none;
+            margin: 20px;
             li{
-                color: var(--gray);
-                padding: 10px;
-                
+                padding: 15px;
                 
             }
-            
-        }
-    
-    
         
+        }
+    }
 
-        section{
-            img{
-                padding: 15px 0px;
-                display: inline-block;
-            }
-        }
-
-        
-        p{
-            color: var(--gray);
-        }
-        section{
-            h2{
-                margin-bottom: 20px;
-            }
-        }
-        ul{
-            li{
-                color: var(--gray);
-                padding: 10px;
-                
-                
-            }
-            
-        }
-        
-
-    
-    
     #footer-bottom{
         background-color: var(--black);
         padding: 27px 0px;
+        
         
         p{
             color: var(--gray);
@@ -78,6 +43,8 @@ footer{
     }
     #form-field{
         background-color: var(--black);
+        display: inline-block;
+        justify-content: right;
         h2{
             color: var(--white);
             padding: 15px 0px;
@@ -97,12 +64,15 @@ footer{
             border-left: 30px;
             display: inline-block;
             
+            
+            
             input{
-                border: 3px;
+                border: 10px;
                 border-color: var(--gray);
                 background-color: var(--black);
+                display: inline-block;
+                align-items: flex-end;
             }
         }
     }
-  
 }
