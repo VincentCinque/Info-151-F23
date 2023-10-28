@@ -468,24 +468,30 @@ footer #footer-top ul li a:link, footer #footer-top ul li a:visited {
 footer #footer-top ul li a:hover, footer #footer-top ul li a:active {
   color: var(--light-blue);
 }
-footer #footer-top #footer-bottom {
+footer #footer-bottom {
   background-color: var(--black);
-  padding: 30px 0px;
+  padding: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-footer #footer-top #footer-bottom p {
+footer #footer-bottom p {
   color: var(--gray);
 }
-footer #footer-top #form-field {
+footer #form-field {
   background-color: var(--black);
   display: inline-block;
 }
-footer #footer-top #form-field h2 {
+footer #form-field h2 {
   color: var(--white);
   padding: 15px 0px;
 }
-footer #footer-top #form-field p {
+footer #form-field p {
   color: var(--gray);
-  padding: 10px 0;
+  padding: 20px 0;
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,7 +500,7 @@ footer #footer-top #form-field p {
       -ms-flex-pack: center;
           justify-content: center;
 }
-footer #footer-top #form-field form {
+footer #form-field form {
   padding: 9px;
   background-color: var(--black);
   border-radius: 1px;
@@ -502,7 +508,7 @@ footer #footer-top #form-field form {
   border: solid var(--gray) 2px;
   border-left: 40px;
 }
-footer #footer-top #form-field form input {
+footer #form-field form input {
   border: 10px;
   border-color: var(--gray);
   background-color: var(--black);
