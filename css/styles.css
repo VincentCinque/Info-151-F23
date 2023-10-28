@@ -421,7 +421,7 @@ footer {
 }
 footer #footer-top {
   background-color: var(--black);
-  padding: 50px 0;
+  padding: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,6 +432,7 @@ footer #footer-top {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-left: 20px;
+  text-decoration: none;
 }
 footer #footer-top img {
   -webkit-box-align: start;
@@ -443,6 +444,9 @@ footer #footer-top p {
   display: inline-block;
   margin-right: 75px;
   margin-left: -150px;
+}
+footer #footer-top a {
+  text-decoration: none;
 }
 footer #footer-top ul {
   list-style: none;
@@ -457,9 +461,28 @@ footer #footer-top ul li a:link, footer #footer-top ul li a:visited {
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-footer #footer-bottom {
+footer #footer-top ul li a:hover, footer #footer-top ul li a:active {
+  color: var(--light-blue);
+}
+footer #footer-top #footer-bottom {
   background-color: var(--black);
-  padding: 27px 0px;
+  padding: 30px 0px;
+}
+footer #footer-top #footer-bottom p {
+  color: var(--gray);
+}
+footer #footer-top #form-field {
+  background-color: var(--black);
+  display: inline-block;
+}
+footer #footer-top #form-field h2 {
+  color: var(--white);
+  padding: 15px 0px;
+}
+footer #footer-top #form-field p {
+  color: var(--gray);
+  padding: 10px 0;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,40 +490,16 @@ footer #footer-bottom {
       -ms-flex-pack: center;
           justify-content: center;
 }
-footer #footer-bottom p {
-  color: var(--gray);
-}
-footer #form-field {
-  background-color: var(--black);
-  display: inline-block;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-footer #form-field h2 {
-  color: var(--white);
-  padding: 15px 0px;
-}
-footer #form-field p {
-  color: var(--gray);
-  padding: 10px 0;
-  margin-bottom: 10px;
-}
-footer #form-field form {
+footer #footer-top #form-field form {
   padding: 9px;
   background-color: var(--black);
   border-radius: 1px;
   border-color: var(--gray);
   border: solid var(--gray) 2px;
-  border-left: 30px;
-  display: inline-block;
+  border-left: 40px;
 }
-footer #form-field form input {
-  border: 10px;
+footer #footer-top #form-field form input {
+  border: 5px;
   border-color: var(--gray);
   background-color: var(--black);
-  display: inline-block;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
