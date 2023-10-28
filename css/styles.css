@@ -379,6 +379,13 @@ button {
   color: var(--white);
   padding: 20px 28px;
   border-radius: 6px;
+  margin-top: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.blue-btn:hover {
+  color: var(--green);
 }
 
 .light-blue-btn {
@@ -386,6 +393,10 @@ button {
   color: var(--white);
   padding: 20px 28px;
   border-radius: 6px;
+}
+
+.light-blue-btn:hover {
+  color: var(--green);
 }
 
 /* =============

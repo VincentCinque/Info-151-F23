@@ -7,16 +7,26 @@ button{
 
 .blue-btn{
     background-color: var(--blue);
-    color:var(--white);
+    color:var(--white) ;
     padding: 20px 28px;
     border-radius: 6px;
+    margin-top: 0;
+    transition: 0.25s;
 }
+.blue-btn:hover{
+    color: var(--green);
+}
+
 
 .light-blue-btn{
     background-color: var(--light-blue);
     color:var(--white);
     padding: 20px 28px;
     border-radius: 6px;
+}
+
+.light-blue-btn:hover{
+    color:var(--green)
 }
 
 
