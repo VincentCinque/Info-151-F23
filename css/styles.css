@@ -386,6 +386,10 @@ button {
   border-radius: 6px;
 }
 
+.blue-btn:hover {
+  color: var(--green);
+}
+
 /* =============
     Forms
 ============= */
@@ -499,7 +503,7 @@ footer #footer-top #form-field form {
   border-left: 40px;
 }
 footer #footer-top #form-field form input {
-  border: 5px;
+  border: 10px;
   border-color: var(--gray);
   background-color: var(--black);
 }
