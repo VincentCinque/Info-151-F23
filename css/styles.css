@@ -14,7 +14,7 @@ html {
   --black: #000000;
   --white: #ffffff;
   --light-blue: #42B4EE;
-  --blue: #060640;
+  --blue: #0e0e74;
   --green: #00E5CC;
   --gray: #9090A7;
   --purple: #5319A6;
@@ -338,6 +338,12 @@ template {
 ============= */
 #html-tag {
   margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* =============
@@ -425,6 +431,16 @@ textarea {
 /* =============
     Header
 ============= */
+#plans-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
 /* =============
     Footer
 ============= */
@@ -439,78 +455,69 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#content #plans-top h1 {
-  padding: 30px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#content #plans-top label {
-  margin-left: 50px;
-}
-#content #plans-startup {
+
+#plans-startup {
   border: solid;
   border-color: var(--gray);
   display: inline-block;
   margin: auto 0;
 }
-#content #plans-startup h3 {
+#plans-startup h3 {
   padding: 5px 0;
   margin-left: 40px;
 }
-#content #plans-startup h1 {
+#plans-startup h1 {
   padding: 5px 0;
   margin-left: 40px;
 }
-#content #plans-startup p {
+#plans-startup p {
   padding: 5px 0;
   margin-left: 40px;
 }
-#content #plans-startup button {
+#plans-startup button {
   margin: 15px;
 }
-#content #plans-classic {
+
+#plans-classic {
   border: solid;
   border-color: var(--purple);
   display: inline-block;
   margin-left: auto 0;
 }
-#content #plans-classic aside h3 {
+#plans-classic aside h3 {
   background-color: var(--purple);
   padding: 5px 0;
 }
-#content #plans-classic aside h1 {
+#plans-classic aside h1 {
   background-color: var(--purple);
   padding: 5px 0;
 }
-#content #plans-classic aside p {
+#plans-classic aside p {
   padding: 5px 0;
   margin-left: 40px;
 }
-#content #plans-classic aside button {
+#plans-classic aside button {
   margin: 15px;
 }
-#content #plans-premium {
+
+#plans-premium {
   border: solid;
   border-color: var(--gray);
   display: inline-block;
   margin-left: auto 0;
 }
-#content #plans-premium h3 {
+#plans-premium h3 {
   padding: 5px 0;
   margin-left: 40px;
 }
-#content #plans-premium h1 {
+#plans-premium h1 {
   padding: 5px 0;
   margin-left: 40px;
 }
-#content #plans-premium p {
+#plans-premium p {
   padding: 5px 0;
   margin-left: 40px;
 }
-#content #plans-premium button {
+#plans-premium button {
   margin: 15px;
 }
