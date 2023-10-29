@@ -7,9 +7,10 @@ footer{
     #footer-top{
         background-color: var(--black);
         padding: 60px 0;
-        display: flex;
-        justify-content: left;
-        align-items: flex-end;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        //justify-content: left;
+        //align-items: flex-end;
         margin-left: 20px;
         text-decoration: none;
        
@@ -18,19 +19,23 @@ footer{
         margin-bottom: 10px;
        }
         p{
-        display: inline-block;
-        margin-right: 75px;
-        margin-left: -150px;
+        //display: inline-block;
+        //margin-right: 75px;
+        //margin-left: -150px;
        }
        a{
         text-decoration: none;
        }
+       #socials{
+        display: flex;
+       }
         ul{
-            list-style: none;
-            margin: 20px;
+            //margin: 20px;
+            
             
             li{
                 padding: 15px;
+                list-style: none;
                 
 
                 a:link, a:visited{

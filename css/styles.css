@@ -345,6 +345,11 @@ body {
   margin-top: 60px;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 /* =============
     Typography
 ============= */
@@ -426,15 +431,10 @@ footer {
 footer #footer-top {
   background-color: var(--black);
   padding: 60px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
   margin-left: 20px;
   text-decoration: none;
 }
@@ -444,20 +444,17 @@ footer #footer-top img {
           align-items: flex-start;
   margin-bottom: 10px;
 }
-footer #footer-top p {
-  display: inline-block;
-  margin-right: 75px;
-  margin-left: -150px;
-}
 footer #footer-top a {
   text-decoration: none;
 }
-footer #footer-top ul {
-  list-style: none;
-  margin: 20px;
+footer #footer-top #socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 footer #footer-top ul li {
   padding: 15px;
+  list-style: none;
 }
 footer #footer-top ul li a:link, footer #footer-top ul li a:visited {
   font-size: 1.25rem;
