@@ -343,11 +343,17 @@ body {
 #htlm-tag {
   background-color: var(--black);
   margin-top: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 ul {
   padding: 0;
   margin: 0;
+}
+ul li {
+  list-style: none;
 }
 
 /* =============
@@ -418,6 +424,10 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  display: inline-block;
+}
+
 /* =============
     Header
 ============= */
@@ -426,44 +436,75 @@ textarea {
 ============= */
 footer {
   color: var(--white);
-  list-style: none;
 }
 footer #footer-top {
   background-color: var(--black);
-  padding: 60px 0;
+  padding: 70px 40px;
+  text-decoration: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-  grid-template-columns: 25% 25% 25% 25%;
-  margin-left: 20px;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". ftgi .";
+}
+footer #footer-top #footer-top-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: ftgi;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 23% 20% 20% auto;
+  grid-template-columns: 23% 20% 20% auto;
+  padding: 20px;
+}
+footer #footer-top #footer-top-grid-item img {
+  margin-bottom: 20px;
+}
+footer #footer-top #footer-top-grid-item a {
   text-decoration: none;
 }
-footer #footer-top img {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 10px;
+footer #footer-top #footer-top-grid-item ul li {
+  padding: 10px;
 }
-footer #footer-top a {
-  text-decoration: none;
-}
-footer #footer-top #socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-footer #footer-top ul li {
-  padding: 15px;
-  list-style: none;
-}
-footer #footer-top ul li a:link, footer #footer-top ul li a:visited {
+footer #footer-top #footer-top-grid-item ul li a:link, footer #footer-top #footer-top-grid-item ul li a:visited {
   font-size: 1.25rem;
   color: var(--gray);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-footer #footer-top ul li a:hover, footer #footer-top ul li a:active {
+footer #footer-top #footer-top-grid-item ul li a:hover, footer #footer-top #footer-top-grid-item ul li a:active {
   color: var(--light-blue);
+}
+footer #footer-top #footer-top-grid-item #socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer #footer-top #footer-top-grid-item #socials li {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+footer #footer-top #footer-top-grid-item #socials li a:link, footer #footer-top #footer-top-grid-item #socials li a:visited {
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--gray);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+footer #footer-top #footer-top-grid-item #socials li a:hover, footer #footer-top #footer-top-grid-item #socials li a:active {
+  background-color: var(--light-blue);
+  color: var(--white);
+  border: 1px solid var(--light-blue);
 }
 footer #footer-bottom {
   background-color: var(--black);
@@ -480,33 +521,27 @@ footer #footer-bottom p {
 }
 footer #form-field {
   background-color: var(--black);
-  display: inline-block;
 }
 footer #form-field h2 {
   color: var(--white);
-  padding: 15px 0px;
 }
 footer #form-field p {
   color: var(--gray);
   padding: 20px 0;
   margin-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 footer #form-field form {
-  padding: 9px;
+  padding: 1px;
   background-color: var(--black);
-  border-radius: 1px;
+  border-radius: 2px;
   border-color: var(--gray);
   border: solid var(--gray) 2px;
-  border-left: 40px;
+  border-left: 30px;
+  display: inline-block;
 }
 footer #form-field form input {
   border: 10px;
   border-color: var(--gray);
   background-color: var(--black);
+  display: inline-block;
 }
