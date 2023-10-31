@@ -386,7 +386,6 @@ button {
   color: var(--white);
   padding: 20px 20px;
   border-radius: 6px;
-  margin: auto;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -443,9 +442,10 @@ nav ul li {
   color: var(--gray);
   list-style: none;
   padding: 25px;
+  margin-right: 8px;
 }
 nav ul li a:link, nav ul li a:visited {
-  font-size: 1.25rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   color: var(--gray);
   -webkit-transition: 0.25s;
@@ -490,13 +490,14 @@ header #logo-container {
   margin-top: 120px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 35% auto;
-  grid-template-columns: 35% auto;
+  -ms-grid-columns: 40% auto;
+  grid-template-columns: 40% auto;
 }
 #hero div h1 {
   color: var(--white);
   margin-bottom: 30px;
   font-weight: 600;
+  font-size: 58px;
 }
 #hero div p {
   color: var(--white);
@@ -505,6 +506,16 @@ header #logo-container {
 #hero div ul {
   list-style: none;
 }
+#hero section aside img {
+  margin-top: -100px;
+  margin-left: 100px;
+}
+
 #html-tag {
   margin-top: 80px;
+  margin-left: 350px;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

@@ -15,7 +15,7 @@ nav{
     ul{
         display:flex;
         justify-content: flex-end;
-        //margin-right: 175px;
+        //margin-right: 50px;
         //margin-top: 0px;
         list-style: none;
         align-items: center;
@@ -24,10 +24,10 @@ nav{
             color: var(--gray);
             list-style: none;
             padding: 25px;
-            //margin-right: 10px;
+            margin-right: 8px;
            
             a:link, a:visited{
-                font-size: rem-calc(20);
+                font-size: rem-calc(15);
                 font-weight: 400;
                 color: var(--gray);
                 transition: 0.25s;
