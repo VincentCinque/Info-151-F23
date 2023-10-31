@@ -2,11 +2,15 @@
     Header
 ============= */
 header{
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin-top: 50px;
+    align-items: center;
 
-.logo{
-    margin-left: 300px;
+    #logo-container{
     display:flex;
-    align-items: flex-start;
+    //margin-bottom: 25px;
     
-}
-}
+    }
+}   
+

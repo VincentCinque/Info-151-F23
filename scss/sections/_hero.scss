@@ -2,47 +2,45 @@
     Hero
 ============= */
 #hero{
-    margin-top: 110px;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 35% auto;
 
-    section{
-        
-        #hero-card{
-            background-color: var(--purple);
-            border-radius: 14px;
-            padding: 22px;
-            
-        }
-    }
-    #hero-text{
+    div{
+
         h1{
-            color: var(--white);
-            margin-bottom: 15px;
-            display: inline-block;
-            font-size: 300%;
-            font-weight: 600;
-            
-            
+        color: var(--white);
+        margin-bottom: 30px;
+        font-weight: 600;
+        //display: inline-block;
         }
         p{
             color: var(--white);
-            display: flex;
-            font-weight: 400;
-            
-
-
-            
+            margin-bottom: 30px;
+            //display: inline-block;
         }
-        button{
-            margin-top: 30px;
-            display: inline-block;
-            
+        ul{
+            list-style: none;
+           
         }
-    }
-    img{
-        margin-top: 60px;
         
     }
+    section{
+    
+        aside{
+            //margin-bottom: 150px;
+            img{
+                //margin-bottom: 150px;
+                
+
+            }
+        }
+    }
+
+
 }
+     
+    
 #html-tag{
-    margin-top: 60px;
+    margin-top: 80px;
 }

@@ -3,23 +3,28 @@
 ============= */
 a{
     text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    
 }
 
 
 nav{
-    .logo{
-        margin-top: 50px;
-    }
+    display: inline-block;
+    
     ul{
         display:flex;
         justify-content: flex-end;
-        margin-right: 175px;
-        margin-top: 0px;
+        //margin-right: 175px;
+        //margin-top: 0px;
+        list-style: none;
+        align-items: center;
         
         li{
             color: var(--gray);
             list-style: none;
-            padding: 30px;
+            padding: 25px;
+            //margin-right: 10px;
            
             a:link, a:visited{
                 font-size: rem-calc(20);

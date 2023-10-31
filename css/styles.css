@@ -339,6 +339,18 @@ template {
 body {
   background-color: var(--purple);
 }
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
 
 /* =============
     Typography
@@ -372,9 +384,9 @@ button {
 .blue-btn {
   background-color: var(--light-blue);
   color: var(--white);
-  padding: 20px 28px;
+  padding: 20px 20px;
   border-radius: 6px;
-  margin-top: 0;
+  margin: auto;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -408,10 +420,12 @@ textarea {
 ============= */
 a {
   text-decoration: none;
+  list-style: none;
+  display: inline-block;
 }
 
-nav .logo {
-  margin-top: 50px;
+nav {
+  display: inline-block;
 }
 nav ul {
   display: -webkit-box;
@@ -420,13 +434,15 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: 175px;
-  margin-top: 0px;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav ul li {
   color: var(--gray);
   list-style: none;
-  padding: 30px;
+  padding: 25px;
 }
 nav ul li a:link, nav ul li a:visited {
   font-size: 1.25rem;
@@ -448,14 +464,20 @@ nav ul li a.select {
 /* =============
     Header
 ============= */
-header .logo {
-  margin-left: 300px;
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+  grid-template-columns: 50% auto;
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header #logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 /* =============
@@ -465,35 +487,24 @@ header .logo {
     Hero
 ============= */
 #hero {
-  margin-top: 110px;
+  margin-top: 120px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% auto;
+  grid-template-columns: 35% auto;
 }
-#hero section #hero-card {
-  background-color: var(--purple);
-  border-radius: 14px;
-  padding: 22px;
-}
-#hero #hero-text h1 {
+#hero div h1 {
   color: var(--white);
-  margin-bottom: 15px;
-  display: inline-block;
-  font-size: 300%;
+  margin-bottom: 30px;
   font-weight: 600;
 }
-#hero #hero-text p {
+#hero div p {
   color: var(--white);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 400;
+  margin-bottom: 30px;
 }
-#hero #hero-text button {
-  margin-top: 30px;
-  display: inline-block;
+#hero div ul {
+  list-style: none;
 }
-#hero img {
-  margin-top: 60px;
-}
-
 #html-tag {
-  margin-top: 60px;
+  margin-top: 80px;
 }
