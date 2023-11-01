@@ -1,21 +1,27 @@
 /* =============
     Base
 ============= */
-body{
-    background-color: var(--purple);
 
+body{
+
+    background-color: var(--purple);
     main{
         display: grid;
-        grid-template-columns: auto 1140px auto;
-        grid-template-areas: ". main-grid-item .";
-       
-       
-        #main-grid-item{
-            grid-area: main-grid-item;
+        grid-template-columns: auto 1170px auto;
+        grid-template-areas:". main-content ." ;
 
+        #main-grid-item{
+            grid-area: main-content;
             
+
         }
     }
 }
 
-
+#html-tag{
+    margin-top: 60px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
