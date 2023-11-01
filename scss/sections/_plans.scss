@@ -2,15 +2,19 @@
     Plans
 ============= */
 #content{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 60px;
+    
 
 }
 #plans-startup{
     border: solid;
     border-color: var(--gray);
-    display: inline-block;
-    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
     
 
     
@@ -36,11 +40,15 @@
 #plans-classic{
     border: solid;
     border-color: var(--purple);
-    display: inline-block;
-    margin-left: auto 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
     
 
     aside{
+
+        #purple{
+            background-color: var(--purple);
         h3{
             background-color: var(--purple);
             padding: 5px 0;
@@ -51,6 +59,7 @@
             background-color: var(--purple);
             padding: 5px 0;
         }
+    }
         p{
             padding: 5px 0;
             margin-left: 40px;
@@ -59,14 +68,19 @@
             margin: 15px;
          
         }
+
+        
     }
 
 }
 #plans-premium{
     border: solid;
     border-color: var(--gray);
-    display: inline-block;
+    //display: inline-block;
     margin-left: auto 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 
     h3{
         padding: 5px 0;

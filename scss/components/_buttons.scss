@@ -29,6 +29,51 @@ button{
     color:var(--green)
 }
 
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.slider-round{
+    position: absolute;
+    cursor: pointer;
+    border: solid 1px var(--light-blue);
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white);
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.switch input{display:none}
+
+.slider-round:before{
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 5px;
+    bottom: 2px;
+    background-color: var(--light-blue);
+    transition: 0.4s;
+    border-radius: 50px;
+
+}
+
+input:checked + .slider-round{
+    background-color: var(--lighter-blue);
+}
+
+input:checked + .slider-round:before{
+    transform: translateX(45px);
+}
+
 
 
 
