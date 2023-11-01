@@ -15,16 +15,17 @@ footer{
         #footer-top-grid-item{
             grid-area: ftgi;
             display: grid;
-            grid-template-columns: 23% 20% 20% auto;
+            grid-template-columns: 20% 20% 25% auto;
             padding: 20px;
         
             img{
                 //align-items: flex-start;
                 margin-bottom: 20px;
+                margin-left: -200px;
                }
                 p{
                 //display: inline-block;
-                //margin-right: 75px;
+                margin-left: -200px;
                 //margin-left: -150px;
                 //margin-right: 30px;
                }
@@ -56,8 +57,10 @@ footer{
                #socials{
                 display: flex;
                 li{
-                    margin-right: 10px;
+                    margin-left: -60px;
+                    margin-right: -20px;
                     margin-top: 20px;
+                    padding: 1px;
                     a:link, a:visited{
                         height: 30px;
                         width: 30px;
@@ -110,8 +113,9 @@ footer{
             color: var(--gray);
             padding: 20px 0;
             margin-bottom: 10px;
-            //display: flex;
-            //justify-content: center;
+            margin-left: -40px;
+            display: flex;
+            justify-content: flex-end;
         }
         form{
             padding: 1px;

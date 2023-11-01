@@ -453,12 +453,16 @@ footer #footer-top #footer-top-grid-item {
   grid-area: ftgi;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 23% 20% 20% auto;
-  grid-template-columns: 23% 20% 20% auto;
+  -ms-grid-columns: 20% 20% 25% auto;
+  grid-template-columns: 20% 20% 25% auto;
   padding: 20px;
 }
 footer #footer-top #footer-top-grid-item img {
   margin-bottom: 20px;
+  margin-left: -200px;
+}
+footer #footer-top #footer-top-grid-item p {
+  margin-left: -200px;
 }
 footer #footer-top #footer-top-grid-item a {
   text-decoration: none;
@@ -481,8 +485,10 @@ footer #footer-top #footer-top-grid-item #socials {
   display: flex;
 }
 footer #footer-top #footer-top-grid-item #socials li {
-  margin-right: 10px;
+  margin-left: -60px;
+  margin-right: -20px;
   margin-top: 20px;
+  padding: 1px;
 }
 footer #footer-top #footer-top-grid-item #socials li a:link, footer #footer-top #footer-top-grid-item #socials li a:visited {
   height: 30px;
@@ -529,6 +535,13 @@ footer #form-field p {
   color: var(--gray);
   padding: 20px 0;
   margin-bottom: 10px;
+  margin-left: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 footer #form-field form {
   padding: 1px;
