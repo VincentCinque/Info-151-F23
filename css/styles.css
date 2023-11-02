@@ -456,8 +456,8 @@ footer #footer-top #footer-top-grid-item {
   grid-area: ftgi;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% 28% 25% auto;
-  grid-template-columns: 10% 28% 25% auto;
+  -ms-grid-columns: 10% 24% 25% auto;
+  grid-template-columns: 10% 24% 25% auto;
   padding: 20px;
 }
 footer #footer-top #footer-top-grid-item section img {
