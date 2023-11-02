@@ -395,8 +395,9 @@ button {
 .blue-btn {
   background-color: var(--light-blue);
   color: var(--white);
-  padding: 20px 20px;
+  padding: 20px 50px;
   border-radius: 6px;
+  margin: 0px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -431,19 +432,12 @@ textarea {
 a {
   text-decoration: none;
   list-style: none;
-  display: inline-block;
 }
 
-nav {
-  display: inline-block;
-}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   list-style: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -454,6 +448,8 @@ nav ul li {
   list-style: none;
   padding: 25px;
   margin-right: 8px;
+  font-weight: 400;
+  font-size: 20px;
 }
 nav ul li a:link, nav ul li a:visited {
   font-size: 0.9375rem;
@@ -461,6 +457,9 @@ nav ul li a:link, nav ul li a:visited {
   color: var(--gray);
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 nav ul li a:hover, nav ul li a:active {
   color: var(--light-blue);
@@ -506,16 +505,22 @@ header #logo-container {
 }
 #hero div h1 {
   color: var(--white);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-left: -10px;
   font-weight: 600;
-  font-size: 58px;
+  font-size: 60px;
+  padding: 5px 5px;
 }
 #hero div p {
   color: var(--white);
   margin-bottom: 30px;
+  margin-right: 20px;
 }
 #hero div ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 #hero section aside img {
   margin-top: -100px;
