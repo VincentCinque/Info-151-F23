@@ -42,7 +42,8 @@
         aside{
             img{
                 margin-top: -100px;
-                margin-left: 100px;
+                //margin-left: 100px;
+                width: 100%;
             }
         }
     }
@@ -53,7 +54,7 @@
     
 #html-tag{
     margin-top: 80px;
-    margin-left: 350px;
+    //margin-left: 350px;
     display: flex;
     justify-content: center;
 }

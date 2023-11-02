@@ -353,14 +353,12 @@ body main #main-grid-item {
 }
 
 #html-tag {
-  margin-top: 60px;
-  margin-left: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* =============
@@ -395,7 +393,7 @@ button {
 .blue-btn {
   background-color: var(--light-blue);
   color: var(--white);
-  padding: 20px 50px;
+  padding: 15px 30px;
   border-radius: 6px;
   margin: 0px;
   -webkit-transition: 0.25s;
@@ -431,13 +429,15 @@ textarea {
 ============= */
 a {
   text-decoration: none;
-  list-style: none;
 }
 
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   list-style: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -449,7 +449,6 @@ nav ul li {
   padding: 25px;
   margin-right: 8px;
   font-weight: 400;
-  font-size: 20px;
 }
 nav ul li a:link, nav ul li a:visited {
   font-size: 0.9375rem;
@@ -476,17 +475,17 @@ nav ul li a.select {
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% auto;
-  grid-template-columns: 50% auto;
+  -ms-grid-columns: 20% auto;
+  grid-template-columns: 20% auto;
   margin-top: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 header #logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* =============
@@ -523,12 +522,11 @@ header #logo-container {
 }
 #hero section aside img {
   margin-top: -100px;
-  margin-left: 100px;
+  width: 100%;
 }
 
 #html-tag {
   margin-top: 80px;
-  margin-left: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

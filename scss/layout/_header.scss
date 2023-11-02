@@ -3,12 +3,15 @@
 ============= */
 header{
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 20% auto;
     margin-top: 50px;
-    align-items: center;
+    
 
     #logo-container{
-    display:flex;
+        display: flex;
+        align-items: center;
+    
+   // justify-content: flex-end;
     //margin-bottom: 25px;
     
     }
