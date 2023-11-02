@@ -467,6 +467,7 @@ footer #footer-top #footer-top-grid-item section img {
 footer #footer-top #footer-top-grid-item section #para {
   margin-left: -200px;
   margin-right: 30px;
+  color: var(--gray);
 }
 footer #footer-top #footer-top-grid-item section a {
   text-decoration: none;
@@ -547,19 +548,13 @@ footer #form-field h2 {
 }
 footer #form-field p {
   color: var(--gray);
-  padding: 15px 0;
+  padding: 15px 200px 15px 0;
   margin-bottom: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 footer #form-field form {
   padding: 1px;
   background-color: var(--black);
-  border-radius: 2px;
+  border-radius: 5%;
   border-color: var(--gray);
   border: solid var(--gray) 2px;
   display: inline-block;
