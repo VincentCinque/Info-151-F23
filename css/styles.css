@@ -341,8 +341,10 @@ body {
 }
 
 #htlm-tag {
-  background-color: var(--black);
   margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -440,6 +442,7 @@ footer {
 footer #footer-top {
   background-color: var(--black);
   padding: 70px 40px;
+  margin-left: 20%;
   text-decoration: none;
   display: -ms-grid;
   display: grid;
@@ -453,30 +456,34 @@ footer #footer-top #footer-top-grid-item {
   grid-area: ftgi;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 20% 25% auto;
-  grid-template-columns: 20% 20% 25% auto;
+  -ms-grid-columns: 10% 28% 25% auto;
+  grid-template-columns: 10% 28% 25% auto;
   padding: 20px;
 }
-footer #footer-top #footer-top-grid-item img {
-  margin-bottom: 20px;
+footer #footer-top #footer-top-grid-item section img {
+  margin-bottom: 30px;
   margin-left: -200px;
 }
-footer #footer-top #footer-top-grid-item p {
+footer #footer-top #footer-top-grid-item section #para {
   margin-left: -200px;
+  margin-right: 30px;
 }
-footer #footer-top #footer-top-grid-item a {
+footer #footer-top #footer-top-grid-item section a {
   text-decoration: none;
 }
-footer #footer-top #footer-top-grid-item ul li {
+footer #footer-top #footer-top-grid-item section ul {
+  margin-bottom: 10%;
+}
+footer #footer-top #footer-top-grid-item section ul li {
   padding: 10px;
 }
-footer #footer-top #footer-top-grid-item ul li a:link, footer #footer-top #footer-top-grid-item ul li a:visited {
+footer #footer-top #footer-top-grid-item section ul li a:link, footer #footer-top #footer-top-grid-item section ul li a:visited {
   font-size: 1.25rem;
   color: var(--gray);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-footer #footer-top #footer-top-grid-item ul li a:hover, footer #footer-top #footer-top-grid-item ul li a:active {
+footer #footer-top #footer-top-grid-item section ul li a:hover, footer #footer-top #footer-top-grid-item section ul li a:active {
   color: var(--light-blue);
 }
 footer #footer-top #footer-top-grid-item #socials {
@@ -514,7 +521,6 @@ footer #footer-top #footer-top-grid-item #socials li a:hover, footer #footer-top
 }
 footer #footer-bottom {
   background-color: var(--black);
-  padding: 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,21 +533,28 @@ footer #footer-bottom p {
 }
 footer #form-field {
   background-color: var(--black);
+  padding: 0px 10px;
 }
 footer #form-field h2 {
   color: var(--white);
-}
-footer #form-field p {
-  color: var(--gray);
-  padding: 20px 0;
-  margin-bottom: 10px;
-  margin-left: -40px;
+  margin-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+footer #form-field p {
+  color: var(--gray);
+  padding: 15px 0;
+  margin-bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 footer #form-field form {
   padding: 1px;
@@ -549,12 +562,17 @@ footer #form-field form {
   border-radius: 2px;
   border-color: var(--gray);
   border: solid var(--gray) 2px;
-  border-left: 30px;
   display: inline-block;
 }
 footer #form-field form input {
-  border: 10px;
+  border: 8px;
   border-color: var(--gray);
   background-color: var(--black);
   display: inline-block;
+}
+footer #resources h2 {
+  margin-bottom: 10%;
+}
+footer #useful-links h2 {
+  margin-bottom: 10%;
 }
