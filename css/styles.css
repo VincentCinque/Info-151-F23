@@ -524,7 +524,7 @@ textarea {
 }
 
 #plans-startup {
-  border: solid;
+  border: solid 0.1px;
   border-color: var(--gray);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,23 +535,38 @@ textarea {
   padding: 40px;
 }
 #plans-startup h3 {
-  padding: 5px 0;
-  margin-left: 40px;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #plans-startup h1 {
   padding: 5px 0;
-  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #plans-startup p {
   padding: 5px 0;
-  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #plans-startup button {
   margin: 15px;
 }
 
 #plans-classic {
-  border: solid;
+  border: solid 0.1px;
   border-color: var(--purple);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,21 +582,38 @@ textarea {
 #plans-classic aside #purple h3 {
   background-color: var(--purple);
   padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #plans-classic aside #purple h1 {
   background-color: var(--purple);
   padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #plans-classic aside p {
   padding: 5px 0;
-  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #plans-classic aside button {
   margin: 15px;
 }
 
 #plans-premium {
-  border: solid;
+  border: solid 0.1px;
   border-color: var(--gray);
   margin-left: auto 0;
   display: -webkit-box;
@@ -594,15 +626,30 @@ textarea {
 }
 #plans-premium h3 {
   padding: 5px 0;
-  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #plans-premium h1 {
   padding: 5px 0;
-  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #plans-premium p {
-  padding: 5px 0;
-  margin-left: 40px;
+  padding: 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #plans-premium button {
   margin: 15px;
