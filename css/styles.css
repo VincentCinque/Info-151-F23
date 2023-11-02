@@ -453,7 +453,6 @@ nav ul li {
 }
 nav ul li a:link, nav ul li a:visited {
   font-size: 0.9375rem;
-  font-weight: 400;
   color: var(--gray);
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -530,7 +529,9 @@ header #logo-container {
 #html-tag {
   margin-top: 80px;
   margin-left: 350px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
