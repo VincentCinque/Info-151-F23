@@ -565,92 +565,25 @@ textarea {
   margin: 15px;
 }
 
-#plans-classic {
+.plans {
   border: solid 0.1px;
   border-color: var(--purple);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 40px;
+  text-align: center;
+  -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.5);
+          box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.5);
 }
-#plans-classic aside #purple {
-  background-color: var(--purple);
-}
-#plans-classic aside #purple h3 {
-  background-color: var(--purple);
-  padding: 5px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#plans-classic aside #purple h1 {
-  background-color: var(--purple);
-  padding: 5px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#plans-classic aside p {
-  padding: 5px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#plans-classic aside button {
-  margin: 15px;
+.plans h1 {
+  margin-bottom: 30px;
 }
 
-#plans-premium {
-  border: solid 0.1px;
-  border-color: var(--gray);
-  margin-left: auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.purple {
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.purple div {
+  background-color: var(--purple);
   padding: 40px;
-}
-#plans-premium h3 {
-  padding: 5px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#plans-premium h1 {
-  padding: 5px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#plans-premium p {
-  padding: 5px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#plans-premium button {
-  margin: 15px;
+  color: white;
 }
