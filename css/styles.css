@@ -399,7 +399,8 @@ button {
   color: var(--white);
   padding: 20px 28px;
   border-radius: 6px;
-  margin-top: 0;
+  margin-bottom: 8%;
+  margin-top: 21%;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -413,6 +414,8 @@ button {
   color: var(--white);
   padding: 20px 28px;
   border-radius: 6px;
+  margin-bottom: 10%;
+  margin-top: 28%;
 }
 
 .light-blue-btn:hover {
@@ -574,7 +577,15 @@ textarea {
           box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.5);
 }
 .plans h1 {
-  margin-bottom: 30px;
+  margin-bottom: 2%;
+  padding: 15px;
+}
+.plans img {
+  margin-top: 5%;
+}
+.plans p {
+  padding: 10px 30px;
+  margin-top: 7px;
 }
 
 .purple {
@@ -584,6 +595,20 @@ textarea {
 }
 .purple div {
   background-color: var(--purple);
-  padding: 40px;
+  padding: 15px;
   color: white;
+}
+.purple h3 {
+  margin-top: 4%;
+  margin-bottom: 8%;
+}
+.purple img {
+  margin-top: -5px;
+  margin-bottom: 5%;
+}
+.purple h1 {
+  margin-top: -20px;
+}
+.purple p {
+  margin-top: 5px;
 }
