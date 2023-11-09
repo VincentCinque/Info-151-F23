@@ -2,6 +2,7 @@
     Base
 ============= */
 
+
 body{
 
     background-color: var(--purple);
@@ -14,14 +15,21 @@ body{
             grid-area: main-content;
             
 
-        }
-    }
-}
+         }
+     }
+ }
 
 #html-tag{
     //margin-top: 60px;
     //margin-left: 100px;
     display: flex;
     justify-content: center;
+    background-color: orangered;
+    @include md{
+        background-color: var(--blue);
+    }
+    @include xl{
+        background-color: yellowgreen;
+    }
     
 }
