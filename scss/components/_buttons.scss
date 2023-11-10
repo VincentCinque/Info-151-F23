@@ -1,3 +1,16 @@
 /* =============
     Buttons
 ============= */
+
+.sign-in{
+a:link, a:visited{
+    transition: 0.25s;
+
+}
+
+a:hover, a:active{
+    color: var(--black);
+
+}
+
+}
