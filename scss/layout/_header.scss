@@ -17,7 +17,7 @@ header{
     }
 
     #burger{
-        border: 1px solid red;
+        //border: 1px solid red;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -37,6 +37,7 @@ header{
         //display: none;
         margin-top: 5%;
         margin-bottom: 5%;
+        
 
         a:link, a:visited{
             transition: 0.25s;
@@ -52,6 +53,12 @@ header{
 
     .sign-up{
         //display: none;
+
+    }
+
+    #btn-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
 
     }
 }

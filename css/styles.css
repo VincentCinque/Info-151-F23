@@ -366,12 +366,31 @@ p {
 /* =============
     Buttons
 ============= */
-.sign-in a:link, .sign-in a:visited {
+.sign-in {
+  border: 1px solid var(--black);
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.sign-up {
+  border: 1px solid var(--black);
+  padding: 16px 24px;
+  border-radius: 8px;
+  color: var(--dark-blue);
+}
+
+.sign-in:hover {
+  color: var(--black);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-.sign-in a:hover, .sign-in a:active {
+
+.sign-up:hover {
   color: var(--black);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 /* =============
@@ -427,19 +446,6 @@ nav ul li a:link, nav ul li a:visited {
 nav ul li a:hover, nav ul li a:active {
   color: var(--black);
 }
-nav .sign-in {
-  border: 1px solid var(--black);
-  padding: 16px 24px;
-  border-radius: 8px;
-  background-color: var(--dark-blue);
-  color: var(--white);
-}
-nav .sign-up {
-  border: 1px solid var(--black);
-  padding: 16px 24px;
-  border-radius: 8px;
-  color: var(--dark-blue);
-}
 
 /* =============
     Header
@@ -467,7 +473,6 @@ header #logo-container {
 header #burger {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,6 +508,13 @@ header .sign-in a:link, header .sign-in a:visited {
 header .sign-in a:hover, header .sign-in a:active {
   color: var(--black);
 }
+header #btn-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+
 /* =============
     Footer
 ============= */

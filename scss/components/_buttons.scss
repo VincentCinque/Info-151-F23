@@ -3,14 +3,28 @@
 ============= */
 
 .sign-in{
-a:link, a:visited{
+    border: 1px solid var(--black);
+    padding: 16px 24px;
+    border-radius: 8px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.sign-up{
+    border: 1px solid var(--black);
+    padding: 16px 24px;
+    border-radius: 8px;
+    color: var(--dark-blue);  
+}
+
+.sign-in:hover{
+    color: var(--black);
     transition: 0.25s;
 
 }
 
-a:hover, a:active{
+
+.sign-up:hover{
     color: var(--black);
-
-}
-
+    transition: 0.25s;
 }
