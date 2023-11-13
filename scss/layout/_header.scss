@@ -31,14 +31,27 @@ header{
         grid-area: nav;
         display: flex;
         justify-content: flex-end;
+        font-weight: 400;
     }
-    #sign-in{
-        display: none;
+    .sign-in{
+        //display: none;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+        a:link, a:visited{
+            transition: 0.25s;
+        }
+
+        a:hover, a:active{
+            color: var(--black);
+        }
+
+
 
     }
 
-    #sign-up{
-        display: none;
+    .sign-up{
+        //display: none;
 
     }
 }
