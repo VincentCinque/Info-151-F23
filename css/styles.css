@@ -432,8 +432,28 @@ nav ul {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (min-width: 1200px) {
+  nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -100px;
+  }
+}
 nav ul li {
   border-bottom: 1px solid var(--gray);
+}
+@media (min-width: 1200px) {
+  nav ul li {
+    border: none;
+  }
 }
 nav ul li a:link, nav ul li a:visited {
   padding: 57px 31px;
@@ -458,10 +478,17 @@ header {
   grid-template-columns: 50% 50%;
       grid-template-areas: "logo . burger" "nav nav nav";
 }
+@media (min-width: 1200px) {
+  header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% auto;
+    grid-template-columns: 25% 25% auto;
+  }
+}
 header #logo-container {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,6 +511,11 @@ header #burger {
           align-items: center;
   grid-area: burger;
 }
+@media (min-width: 1200px) {
+  header #burger {
+    display: none;
+  }
+}
 header nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -496,6 +528,23 @@ header nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-weight: 400;
+}
+header #btn-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+@media (min-width: 1200px) {
+  header #btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border: 1px solid red;
+  }
 }
 header .sign-in {
   margin-top: 5%;
@@ -513,6 +562,17 @@ header #btn-container {
   display: grid;
   -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
+}
+@media (min-width: 1200px) {
+  header #btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border: 1px solid red;
+  }
 }
 
 /* =============

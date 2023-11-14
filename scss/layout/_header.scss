@@ -8,10 +8,16 @@ header{
     grid-template-areas: "logo . burger"
     "nav nav nav";
 
+    @include xl{
+        display: grid;
+        grid-template-columns: 25% 25% auto;
+        //border: 1px solid red;
+    }
+
   
 
     #logo-container{
-        border: 1px solid blue;
+        //border: 1px solid blue;
         display: flex;
         align-items: center;
         grid-area: logo;
@@ -25,6 +31,10 @@ header{
         align-items: center;
         grid-area: burger;
 
+        @include xl{
+            display: none;
+        }
+
     }
 
     nav{
@@ -34,11 +44,34 @@ header{
         display: flex;
         justify-content: flex-end;
         font-weight: 400;
+
+        @include xl{
+           //margin-right: 350px;
+        }
+
+
+        
+    }
+
+    #btn-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+        
+
+        @include xl{
+            display: flex;
+            justify-content: flex-end;
+            border: 1px solid red;
+        }
+
     }
     .sign-in{
         //display: none;
         margin-top: 5%;
         margin-bottom: 5%;
+
+    
         
 
         a:link, a:visited{
@@ -61,6 +94,14 @@ header{
     #btn-container{
         display: grid;
         grid-template-columns: 50% 50%;
+        
+        
+
+        @include xl{
+            display: flex;
+            justify-content: flex-end;
+            border: 1px solid red;
+        }
 
     }
 }
