@@ -1,7 +1,9 @@
 /* =============
     Buttons
 ============= */
-
+button{
+    cursor: pointer;
+}
 .sign-in{
     border: 1px solid var(--black);
     padding: 16px 24px;

@@ -366,6 +366,10 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  cursor: pointer;
+}
+
 .sign-in {
   border: 1px solid var(--black);
   padding: 16px 24px;
@@ -416,10 +420,17 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showmainNav {
+  display: block !important;
+}
+
 a {
   text-decoration: none;
 }
 
+nav {
+  display: none;
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;

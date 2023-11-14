@@ -1,11 +1,16 @@
 /* =============
     Navigation
 ============= */
+.showmainNav{
+    display: block !important;
+}
+
 a{
     text-decoration: none;
 }
 
 nav{
+    display: none;
     ul{
         display: flex;
         justify-content: flex-end;
