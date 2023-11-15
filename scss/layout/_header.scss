@@ -4,14 +4,16 @@
 header{
     padding: 22.5px 36px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 25% auto;
     grid-template-areas: "logo . burger"
     "nav nav nav";
 
     @include xl{
         display: grid;
-        grid-template-columns: 25% 25% auto;
-        //border: 1px solid red;
+        grid-template-columns: 15% auto 10%;
+        grid-template-areas: "logo nav . button .";
+        //justify-content: center;
+        border: 1px solid red;
     }
 
   
@@ -30,6 +32,9 @@ header{
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
+        background-color: transparent;
+        border: none;
+        
 
         @include xl{
             display: none;
@@ -53,19 +58,7 @@ header{
         
     }
 
-    #btn-container{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        
-        
-
-        @include xl{
-            display: flex;
-            justify-content: flex-end;
-            border: 1px solid red;
-        }
-
-    }
+  
     .sign-in{
         //display: none;
         margin-top: 5%;
@@ -91,17 +84,6 @@ header{
 
     }
 
-    #btn-container{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        
-        
-
-        @include xl{
-            display: flex;
-            justify-content: flex-end;
-            border: 1px solid red;
-        }
-
-    }
+    
 }
+

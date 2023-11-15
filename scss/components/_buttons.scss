@@ -3,6 +3,8 @@
 ============= */
 button{
     cursor: pointer;
+    //justify-content: flex-end;
+    //margin-left: 100px;
 }
 .sign-in{
     border: 1px solid var(--black);
@@ -30,3 +32,9 @@ button{
     color: var(--black);
     transition: 0.25s;
 }
+
+#burger{
+    border: none;
+    background-color: transparent;
+}
+
