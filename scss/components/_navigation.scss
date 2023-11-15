@@ -33,7 +33,7 @@ a{
             }
 
             a:link, a:visited{
-                padding: 57px 31px;
+                padding: 40px 31px;
                 //border: 1px solid red;
                 display: inline-block;
                 margin-bottom: 12px;
@@ -47,14 +47,24 @@ a{
 
             }
 
-         #btn-container{
-            display: flex;
-            justify-content: flex-end;
-         }
+        
 
            
         }
+
+       
     }
+
+    .buttons{
+        display: inline-block;
+        margin-left: 40%;
+        justify-content: space-between;
+        margin-top: 5%;
+        // grid-area: buttons;
+        // grid-template-columns: 45% 45%;
+        // justify-content: space-between;
+        // margin-top: 20px;
+     }
 
  
 }

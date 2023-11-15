@@ -10,8 +10,8 @@ header{
 
     @include xl{
         display: grid;
-        grid-template-columns: 15% auto 10%;
-        grid-template-areas: "logo nav . button .";
+        grid-template-columns: 20% auto 10%;
+        grid-template-areas: "logo nav . buttons .";
         //justify-content: center;
         border: 1px solid red;
     }
@@ -58,31 +58,11 @@ header{
         
     }
 
+    .buttons{
+        grid-area: buttons;
+    }
+
   
-    .sign-in{
-        //display: none;
-        margin-top: 5%;
-        margin-bottom: 5%;
-
-    
-        
-
-        a:link, a:visited{
-            transition: 0.25s;
-        }
-
-        a:hover, a:active{
-            color: var(--black);
-        }
-
-
-
-    }
-
-    .sign-up{
-        //display: none;
-
-    }
 
     
 }

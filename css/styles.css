@@ -368,30 +368,32 @@ p {
 ============= */
 button {
   cursor: pointer;
+  font-family: "Inter", sans-serif;
 }
 
-.sign-in {
+#sign-in {
   border: 1px solid var(--black);
-  padding: 16px 24px;
+  padding: 20px 30px;
   border-radius: 8px;
   background-color: var(--dark-blue);
   color: var(--white);
 }
 
-.sign-up {
+#sign-up {
   border: 1px solid var(--black);
-  padding: 16px 24px;
+  padding: 20px 24px;
   border-radius: 8px;
   color: var(--dark-blue);
+  font-size: 16px;
 }
 
-.sign-in:hover {
+#sign-in:hover {
   color: var(--black);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
-.sign-up:hover {
+#sign-up:hover {
   color: var(--black);
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -477,7 +479,7 @@ a {
   }
 }
 #mainNav ul li a:link, #mainNav ul li a:visited {
-  padding: 57px 31px;
+  padding: 40px 31px;
   display: inline-block;
   margin-bottom: 12px;
   color: var(--gray);
@@ -487,13 +489,13 @@ a {
 #mainNav ul li a:hover, #mainNav ul li a:active {
   color: var(--black);
 }
-#mainNav ul li #btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+#mainNav .buttons {
+  display: inline-block;
+  margin-left: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5%;
 }
 
 /* =============
@@ -511,9 +513,9 @@ header {
   header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 15% auto 10%;
-    grid-template-columns: 15% auto 10%;
-        grid-template-areas: "logo nav . button .";
+    -ms-grid-columns: 20% auto 10%;
+    grid-template-columns: 20% auto 10%;
+        grid-template-areas: "logo nav buttons";
     border: 1px solid red;
   }
 }
@@ -562,6 +564,9 @@ header nav {
           justify-content: flex-end;
   font-weight: 400;
 }
+header .buttons {
+  grid-area: buttons;
+}
 @media (min-width: 1200px) {
   header #logo-container {
     -ms-grid-row: 1;
@@ -572,18 +577,12 @@ header nav {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
   }
+  header .buttons {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
 }
-header .sign-in {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-header .sign-in a:link, header .sign-in a:visited {
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-header .sign-in a:hover, header .sign-in a:active {
-  color: var(--black);
-}
+
 /* =============
     Footer
 ============= */

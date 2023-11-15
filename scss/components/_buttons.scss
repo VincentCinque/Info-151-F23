@@ -5,30 +5,36 @@ button{
     cursor: pointer;
     //justify-content: flex-end;
     //margin-left: 100px;
+    font-family: 'Inter', sans-serif;
 }
-.sign-in{
+#sign-in{
     border: 1px solid var(--black);
-    padding: 16px 24px;
+    padding: 20px 30px;
     border-radius: 8px;
     background-color: var(--dark-blue);
     color: var(--white);
+    //margin-left: -60px;
+    //justify-content: space-between;
 }
 
-.sign-up{
+#sign-up{
     border: 1px solid var(--black);
-    padding: 16px 24px;
+    padding: 20px 24px;
     border-radius: 8px;
     color: var(--dark-blue);  
+    //justify-content: space-between;
+    font-size: 16px;
+    //margin-right: -50px;
 }
 
-.sign-in:hover{
+#sign-in:hover{
     color: var(--black);
     transition: 0.25s;
 
 }
 
 
-.sign-up:hover{
+#sign-up:hover{
     color: var(--black);
     transition: 0.25s;
 }
