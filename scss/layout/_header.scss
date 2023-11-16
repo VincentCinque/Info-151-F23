@@ -9,9 +9,10 @@ header{
     "nav nav nav";
 
     @include xl{
+        grid-area: ftgi;
         display: grid;
-        grid-template-rows: 50% auto 40%;
-        grid-template-areas: "logo .  nav . btn .";
+        grid-template-columns: auto 700px auto;;
+        grid-template-areas: ". ftgi .";
         //justify-content: center;
         border: 1px solid red;
     }

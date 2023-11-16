@@ -513,12 +513,19 @@ header {
 }
 @media (min-width: 1200px) {
   header {
+    grid-area: ftgi;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 50% auto 40%;
-    grid-template-rows: 50% auto 40%;
-        grid-template-areas: "logo .  nav . btn .";
+    -ms-grid-columns: auto 700px auto;
+    grid-template-columns: auto 700px auto;
+        grid-template-areas: ". ftgi .";
     border: 1px solid red;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
   }
 }
 header #logo-container {
@@ -581,21 +588,6 @@ header nav {
         -ms-flex-direction: row;
             flex-direction: row;
     border: red 1px solid;
-  }
-}
-@media (min-width: 1200px) {
-  header #logo-container {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  header nav {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-  }
-  header .buttons {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
   }
 }
 
