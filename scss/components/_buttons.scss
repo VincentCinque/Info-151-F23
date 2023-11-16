@@ -8,16 +8,18 @@ button{
     font-family: 'Inter', sans-serif;
 }
 #sign-in{
+    grid-area: signin;
     border: 1px solid var(--black);
     padding: 20px 30px;
     border-radius: 8px;
     background-color: var(--dark-blue);
     color: var(--white);
-    //margin-left: -60px;
+    margin-right: 15px;
     //justify-content: space-between;
 }
 
 #sign-up{
+    grid-area: signup;
     border: 1px solid var(--black);
     padding: 20px 24px;
     border-radius: 8px;

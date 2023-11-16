@@ -9,12 +9,10 @@ header{
     "nav nav nav";
 
     @include xl{
-        grid-area: ftgi;
         display: grid;
-        grid-template-columns: auto 700px auto;;
-        grid-template-areas: ". ftgi .";
-        //justify-content: center;
-        border: 1px solid red;
+        grid-template-columns: 10% 10% auto;
+        grid-template-areas: "logo . nav  btn .";
+
     }
 
   
@@ -61,11 +59,16 @@ header{
     }
 
     .buttons{
+        display: flex;
+        justify-content: flex-end;
 
+    
         @include xl{
-        grid-area: btn;
-        flex-direction: row;
-        border: red 1px solid;
+
+            
+        //grid-area: btn;
+        //flex-direction: row;
+        //border: red 1px solid;
 
         }
     }

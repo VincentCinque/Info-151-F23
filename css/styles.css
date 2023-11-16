@@ -372,14 +372,17 @@ button {
 }
 
 #sign-in {
+  grid-area: signin;
   border: 1px solid var(--black);
   padding: 20px 30px;
   border-radius: 8px;
   background-color: var(--dark-blue);
   color: var(--white);
+  margin-right: 15px;
 }
 
 #sign-up {
+  grid-area: signup;
   border: 1px solid var(--black);
   padding: 20px 24px;
   border-radius: 8px;
@@ -483,22 +486,6 @@ a {
 #mainNav ul li a:hover, #mainNav ul li a:active {
   color: var(--black);
 }
-#mainNav .buttons {
-  display: inline-block;
-  margin-left: 40%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5%;
-}
-@media (min-width: 1200px) {
-  #mainNav .buttons {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% auto 25%;
-    grid-template-columns: 50% auto 25%;
-  }
-}
 
 /* =============
     Header
@@ -513,19 +500,11 @@ header {
 }
 @media (min-width: 1200px) {
   header {
-    grid-area: ftgi;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 700px auto;
-    grid-template-columns: auto 700px auto;
-        grid-template-areas: ". ftgi .";
-    border: 1px solid red;
-  }
-}
-@media (min-width: 1200px) {
-  header {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-columns: 10% 10% auto;
+    grid-template-columns: 10% 10% auto;
+        grid-template-areas: "logo . nav  btn .";
   }
 }
 header #logo-container {
@@ -574,23 +553,31 @@ header nav {
   font-weight: 400;
 }
 @media (min-width: 1200px) {
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+}
+@media (min-width: 1200px) {
   header nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
-@media (min-width: 1200px) {
-  header .buttons {
-    grid-area: btn;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    border: red 1px solid;
-  }
+header .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-
 /* =============
     Footer
 ============= */
