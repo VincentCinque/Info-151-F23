@@ -456,12 +456,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 #mainNav ul li {
@@ -497,6 +491,14 @@ a {
           justify-content: space-between;
   margin-top: 5%;
 }
+@media (min-width: 1200px) {
+  #mainNav .buttons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto 25%;
+    grid-template-columns: 50% auto 25%;
+  }
+}
 
 /* =============
     Header
@@ -513,9 +515,9 @@ header {
   header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 20% auto 10%;
-    grid-template-columns: 20% auto 10%;
-        grid-template-areas: "logo nav buttons";
+    -ms-grid-rows: 50% auto 40%;
+    grid-template-rows: 50% auto 40%;
+        grid-template-areas: "logo .  nav . btn .";
     border: 1px solid red;
   }
 }
@@ -564,8 +566,22 @@ header nav {
           justify-content: flex-end;
   font-weight: 400;
 }
-header .buttons {
-  grid-area: buttons;
+@media (min-width: 1200px) {
+  header nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  header .buttons {
+    grid-area: btn;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: red 1px solid;
+  }
 }
 @media (min-width: 1200px) {
   header #logo-container {
@@ -574,12 +590,12 @@ header .buttons {
   }
   header nav {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-column: 3;
     -ms-grid-column-span: 1;
   }
   header .buttons {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 5;
   }
 }
 

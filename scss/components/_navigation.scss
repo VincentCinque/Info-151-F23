@@ -19,8 +19,8 @@ a{
 
         @include xl{
             flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
+            //justify-content: flex-end;
+            //align-items: center;
             //margin-top: -100px;
         }
         li{
@@ -60,10 +60,12 @@ a{
         margin-left: 40%;
         justify-content: space-between;
         margin-top: 5%;
-        // grid-area: buttons;
-        // grid-template-columns: 45% 45%;
-        // justify-content: space-between;
-        // margin-top: 20px;
+       
+
+        @include xl{
+            display: grid;
+            grid-template-columns: 50% auto 25%;
+        }
      }
 
  

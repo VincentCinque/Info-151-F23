@@ -10,8 +10,8 @@ header{
 
     @include xl{
         display: grid;
-        grid-template-columns: 20% auto 10%;
-        grid-template-areas: "logo nav . buttons .";
+        grid-template-rows: 50% auto 40%;
+        grid-template-areas: "logo .  nav . btn .";
         //justify-content: center;
         border: 1px solid red;
     }
@@ -52,6 +52,7 @@ header{
 
         @include xl{
            //margin-right: 350px;
+           justify-content: center;
         }
 
 
@@ -59,8 +60,15 @@ header{
     }
 
     .buttons{
-        grid-area: buttons;
+
+        @include xl{
+        grid-area: btn;
+        flex-direction: row;
+        border: red 1px solid;
+
+        }
     }
+
 
   
 
