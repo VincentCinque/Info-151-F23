@@ -434,6 +434,10 @@ textarea {
   display: block !important;
 }
 
+.showmainBtn {
+  display: block !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -569,8 +573,7 @@ header nav {
     margin-top: 3%;
   }
 }
-header .buttons {
-  display: none;
+header #buttons {
   grid-area: btn;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,7 +588,7 @@ header .buttons {
   margin-top: 40%;
 }
 @media (min-width: 1200px) {
-  header .buttons {
+  header #buttons {
     grid-area: btn;
     display: block;
     -webkit-box-align: center;
@@ -609,11 +612,11 @@ header .buttons {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
   }
-  header .buttons {
+  header #buttons {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
-  header .buttons {
+  header #buttons {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }

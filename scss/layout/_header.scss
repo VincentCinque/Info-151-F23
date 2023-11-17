@@ -68,14 +68,14 @@ header{
         
     }
 
-    .buttons{
-        display: none;
+    #buttons{
         grid-area: btn;
         display: flex;
         justify-content: flex-end;
         max-width: fit-content;
         margin-left: -200px;
         margin-top: 40%;
+        //display: none;
 
     
         @include xl{   
@@ -95,4 +95,5 @@ header{
 
     
 }
+
 

@@ -2,7 +2,7 @@
 
 var mainNav = document.querySelector ("#mainNav");
 
-var btn = document.querySelector (".buttons")
+var btn = document.querySelector ("#buttons")
 
 var burgerBtn = document.querySelector("#burger button")
 console.log(burgerBtn);
@@ -17,12 +17,12 @@ var canYouSeeMainBtn = false;
 function showBtn(){
     console.log("button clicked");
 if(canYouSeeMainBtn === false){
-    btn.classList.add("showbtn")
+    btn.classList.add("showBtn")
     canYouSeeMainBtn = true;
 
 }
 else{
-    btn.classList.remove("showbtn")
+    btn.classList.remove("showBtn")
     canYouSeeMainBtn = false;
 }
 }
