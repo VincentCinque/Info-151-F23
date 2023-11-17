@@ -4,14 +4,16 @@
 header{
     padding: 22.5px 36px;
     display: grid;
-    grid-template-columns: 25% 25% auto;
+    grid-template-columns: auto 30% 5% 0%;
+    //grid-template-rows: 10% auto auto;
     grid-template-areas: "logo . burger"
-    "nav nav nav";
+    " nav nav nav ";
+    //max-width: fit-content;
 
     @include xl{
         display: grid;
-        grid-template-columns: 10% 10% auto;
-        grid-template-areas: "logo . nav  btn .";
+        grid-template-columns: 20% 1% auto;
+        grid-template-areas: "logo . nav . btn ";
 
     }
 
@@ -22,6 +24,10 @@ header{
         display: flex;
         align-items: center;
         grid-area: logo;
+        @include xl{
+            margin-bottom: 25%;
+            margin-top: 7%;
+        }
 
     }
 
@@ -33,6 +39,7 @@ header{
         grid-area: burger;
         background-color: transparent;
         border: none;
+        margin-right: -190%;
         
 
         @include xl{
@@ -48,10 +55,13 @@ header{
         display: flex;
         justify-content: flex-end;
         font-weight: 400;
+        margin-right: -20%;
 
         @include xl{
-           //margin-right: 350px;
+           margin-right: 3%;
            justify-content: center;
+           margin-top: 3%;
+
         }
 
 
@@ -59,15 +69,22 @@ header{
     }
 
     .buttons{
+        display: none;
+        grid-area: btn;
         display: flex;
         justify-content: flex-end;
+        max-width: fit-content;
+        margin-left: -200px;
+        margin-top: 40%;
 
     
-        @include xl{
-
-            
-        //grid-area: btn;
-        //flex-direction: row;
+        @include xl{   
+        grid-area: btn;
+        display: block;
+        align-items:center ;
+        flex-direction: row;
+        margin-top: 10%;
+        margin-left: 38%;
         //border: red 1px solid;
 
         }
