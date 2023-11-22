@@ -335,6 +335,12 @@ template {
 /* =============
     Base
 ============= */
+.show-signIn-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -468,12 +474,26 @@ textarea {
   display: block !important;
 }
 
+.showSignIn {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 a {
   text-decoration: none;
 }
 
 #mainNav {
   display: none;
+}
+@media (min-width: 1200px) {
+  #mainNav {
+    display: block;
+  }
 }
 #mainNav ul {
   display: -webkit-box;
@@ -603,14 +623,9 @@ header nav {
     margin-top: 3%;
   }
 }
-header #buttons {
+header #sign-in-up-buttons {
+  display: none;
   grid-area: btn;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -618,7 +633,7 @@ header #buttons {
   margin-top: 40%;
 }
 @media (min-width: 1200px) {
-  header #buttons {
+  header #sign-in-up-buttons {
     grid-area: btn;
     display: block;
     -webkit-box-align: center;
@@ -642,11 +657,11 @@ header #buttons {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
   }
-  header #buttons {
+  header #sign-in-up-buttons {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
-  header #buttons {
+  header #sign-in-up-buttons {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
@@ -686,6 +701,7 @@ header #buttons {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  display: none;
 }
 #signin-container .close-btn {
   position: absolute;

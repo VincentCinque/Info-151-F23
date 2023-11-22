@@ -1,6 +1,7 @@
 /* =============
     Header
 ============= */
+
 header{
     padding: 22.5px 36px;
     display: grid;
@@ -68,14 +69,14 @@ header{
         
     }
 
-    #buttons{
+    #sign-in-up-buttons{
+        display: none;
         grid-area: btn;
-        display: flex;
-        justify-content: flex-end;
+        //display: flex;
+        //justify-content: flex-end;
         max-width: fit-content;
         margin-left: -200px;
         margin-top: 40%;
-        //display: none;
 
     
         @include xl{   
@@ -85,7 +86,6 @@ header{
         flex-direction: row;
         margin-top: 10%;
         margin-left: 38%;
-        //border: red 1px solid;
 
         }
     }

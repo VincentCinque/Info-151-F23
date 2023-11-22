@@ -5,12 +5,21 @@
     display: block !important;
 }
 
+.showSignIn{
+    display: flex !important;
+    justify-content: flex-end;
+}
+
 a{
     text-decoration: none;
 }
 
 #mainNav{
     display: none;
+
+    @include xl{
+        display: block;
+    }
     ul{
         display: flex;
         justify-content: flex-end;
