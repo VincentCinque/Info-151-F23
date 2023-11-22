@@ -1,0 +1,62 @@
+/* =============
+    Signin
+============= */
+
+#signin-container{
+    //80 at the end of background color adds transparancy to the color
+    background-color: #027e97CC;
+    height: 100vh;
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    //margin-top: 20vh
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .close-btn{
+        position: absolute;
+    }
+
+    
+      
+        form{
+            box-sizing: border-box;
+            padding: 24px;
+            border-radius: 8px;
+            background-color: #024A58CC;
+
+            #close-btn-container{
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 70px;
+
+
+            }
+
+            input{
+                width: 100%;
+                box-sizing: border-box;
+                height: 60px;
+                margin-bottom: 24px;
+                border: none;
+                border-radius: 8px;
+    
+            }
+    
+            #signin-btn-container{
+                display: flex;
+                justify-content: flex-end;
+    
+            }
+    
+            
+        
+
+        }
+
+
+
+}

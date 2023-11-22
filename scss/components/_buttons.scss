@@ -46,3 +46,38 @@ button{
     background-color: transparent;
 }
 
+.lgt-blue{
+    border: 1px solid var(--white);
+    padding: 20px 30px;
+    border-radius: 8px;
+    background-color: var(--light-blue);
+    color: var(--white);
+    margin-right: 15px;
+    //justify-content: space-between;
+
+
+    
+}
+
+.lgt-blue:hover{
+    color: var(--black);
+    transition: 0.25s;
+
+}
+
+
+.close-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lighter-blue);
+    border: 1px solid var(--black);
+
+
+
+}
+
+
