@@ -42,7 +42,7 @@ var closeSignUpModalBtn = document.querySelector ("#close-sign-up-modal-btn");
 function showSignInModal() {
     //console.log("click show");
     signInContainer.classList.add("show-signIn-container")
-
+    mainNav.classList.remove("showmainNav");
     signInUpButtons.classList.remove(showSignIn)
 
 }
@@ -50,8 +50,9 @@ function showSignInModal() {
 function hideSignInModal(){
     signInContainer.classList.remove("show-signIn-container")
     //hide the navigation on open
-    mainNav.classList.remove("showmainNav");
+    
 }
 
 signInBtn.addEventListener("click", showSignInModal);
 closeSignUpModalBtn.addEventListener("click", hideSignInModal);
+signInContainer.addEventListener("click", hideSignInModal)
