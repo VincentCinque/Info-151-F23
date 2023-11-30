@@ -35,7 +35,7 @@ burgerBtn.addEventListener("click", showNav);
 
 //Signin
 
-var signInBtn = document.querySelector ("#sign-in");
+var signInBtn = document.querySelector ("#sign-in-btn");
 var signInContainer = document.querySelector ("#signin-container");
 var closeSignUpModalBtn = document.querySelector ("#close-sign-up-modal-btn");
 
@@ -56,3 +56,5 @@ function hideSignInModal(){
 signInBtn.addEventListener("click", showSignInModal);
 closeSignUpModalBtn.addEventListener("click", hideSignInModal);
 signInContainer.addEventListener("click", hideSignInModal)
+
+//Signup

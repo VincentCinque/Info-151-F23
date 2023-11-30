@@ -7,7 +7,7 @@ button{
     //margin-left: 100px;
     font-family: 'Inter', sans-serif;
 }
-#sign-in{
+#sign-in-btn{
     grid-area: signin;
     border: 1px solid var(--black);
     padding: 20px 30px;
@@ -18,7 +18,7 @@ button{
     //justify-content: space-between;
 }
 
-#sign-up{
+#sign-up-btn{
     grid-area: signup;
     border: 1px solid var(--black);
     padding: 20px 24px;
@@ -29,14 +29,14 @@ button{
     //margin-right: -50px;
 }
 
-#sign-in:hover{
+#sign-in-btn:hover{
     color: var(--black);
     transition: 0.25s;
 
 }
 
 
-#sign-up:hover{
+#sign-up-btn:hover{
     color: var(--black);
     transition: 0.25s;
 }
