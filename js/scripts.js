@@ -3,9 +3,11 @@
 
 
 var mainNav = document.querySelector ("#mainNav");
-var burgerBtn = document.querySelector("#burger button")
+var burgerBtn = document.querySelector("#burger button");
 console.log(burgerBtn);
-var signInUpButtons = document.querySelector("#sign-in-up-buttons")
+var signInUpButtons = document.querySelector("#sign-in-up-buttons");
+var burgerBars = document.querySelector("#burger-bars");
+var burgerX = document.querySelector("#burger-x");
 
 var canYouSeeMainNav = false;
 var canYouSeeButtons = false;
@@ -20,10 +22,25 @@ function showNav(){
     signInUpButtons.classList.add("showSignIn");
     canYouSeeMainNav = true;
 
+
+    //show x
+    burgerX.classList.add("hide-burger-bars");
+
+    //show burger x
+    burgerBars.classList.remove("hide-burger-x");
+
+
 }
 else{
     mainNav.classList.remove("showmainNav");
-    signInUpButtons.classList.remove(showSignIn)
+    signInUpButtons.classList.remove("showSignIn");
+
+        //show x
+        burgerX.classList.remove("hide-burger-bars");
+
+        //show burger x
+        burgerBars.classList.add("hide-burger-x");
+
     canYouSeeMainNav = false;
 }
 }
@@ -36,6 +53,7 @@ burgerBtn.addEventListener("click", showNav);
 //Signin
 
 var signInBtn = document.querySelector ("#sign-in-btn");
+var signUpBtn = document.querySelector("#sign-up-btn")
 var signInContainer = document.querySelector ("#signin-container");
 var closeSignUpModalBtn = document.querySelector ("#close-sign-up-modal-btn");
 
@@ -43,7 +61,7 @@ function showSignInModal() {
     //console.log("click show");
     signInContainer.classList.add("show-signIn-container")
     mainNav.classList.remove("showmainNav");
-    signInUpButtons.classList.remove(showSignIn)
+    signInUpButtons.classList.remove("showSignIn")
 
 }
 
@@ -55,6 +73,7 @@ function hideSignInModal(){
 
 signInBtn.addEventListener("click", showSignInModal);
 closeSignUpModalBtn.addEventListener("click", hideSignInModal);
-signInContainer.addEventListener("click", hideSignInModal)
+signInContainer.addEventListener("click", hideSignInModal);
+signUpBtn.addEventListener("click", showSignInModal);
 
 //Signup
