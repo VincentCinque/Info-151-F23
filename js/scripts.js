@@ -1,6 +1,7 @@
 // navigation
 
 Fancybox.bind();
+AOS.init();
 
 const container = document.querySelector("#myCarousel");
 const options = { infinite: true };

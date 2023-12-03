@@ -13,6 +13,8 @@
     <!-- Fancy Apps -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <!-- AOS Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Week-10-FancyApps</title>
 </head>
@@ -65,9 +67,10 @@
     </header>
 
     <section id="hero"></section>
-
+    
     <section id="fancybox">
         <div id="fb-grid-item">
+            <div data-aos="fade-up">
             <h1>Fancybox</h1>
             <ul>
                 <li>
@@ -84,10 +87,12 @@
                 </li>
             </ul>
         </div>
+    </div>
     </section>
 
     <section id="fancyCarousel">
         <div id="fc-grid-item">
+            <div data-aos="fade-up">
             <h1>Fancy Carousel</h1>
             <div class="f-carousel" id="myCarousel">
                 <!-- <div class="f-carousel__slide"><img src="img/fancy/fancy-1.jpg" alt="Scuba Diver"></div>
@@ -99,12 +104,12 @@
                 <div class="f-carousel__slide"><div id="fc-2" class="slide"></div></div>
                 <div class="f-carousel__slide"><div id="fc-3" class="slide"></div></div>
                 <div class="f-carousel__slide"><div id="fc-4" class="slide"></div></div>
-            
+            </div>
 
             </div>
         </div>
     </section>
-
+   
     <div id="html-valid">
         <!--https://validator.w3.org/nu/?doc=YOUR-NETLIFY-URL-GOES-HERE-->
        <!--Target="_blank" will open a new tab or new window depending on how browser is set up --> 
@@ -116,6 +121,7 @@
     <!-- FANCY BOX -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scripts-dist.js"></script>
 
 </body>
