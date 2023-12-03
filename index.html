@@ -11,10 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap" rel="stylesheet">
     <!-- Fancy Apps -->
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-
-
     <link rel="stylesheet" href="css/styles.css">
     <title>Week-10-FancyApps</title>
 </head>
@@ -88,6 +86,25 @@
         </div>
     </section>
 
+    <section id="fancyCarousel">
+        <div id="fc-grid-item">
+            <h1>Fancy Carousel</h1>
+            <div class="f-carousel" id="myCarousel">
+                <!-- <div class="f-carousel__slide"><img src="img/fancy/fancy-1.jpg" alt="Scuba Diver"></div>
+                <div class="f-carousel__slide"><img src="img/fancy/fancy-2.jpg" alt="waves"></div>
+                <div class="f-carousel__slide"><img src="img/fancy/fancy-3.jpg" alt="coral Reef"></div>
+                <div class="f-carousel__slide"><img src="img/fancy/fancy-4.jpg" alt="Jelly Fish"></div> -->
+
+                <div class="f-carousel__slide"><div id="fc-1" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-2" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-3" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-4" class="slide"></div></div>
+            
+
+            </div>
+        </div>
+    </section>
+
     <div id="html-valid">
         <!--https://validator.w3.org/nu/?doc=YOUR-NETLIFY-URL-GOES-HERE-->
        <!--Target="_blank" will open a new tab or new window depending on how browser is set up --> 
@@ -97,6 +114,7 @@
     </div>
 
     <!-- FANCY BOX -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/scripts-dist.js"></script>
 
