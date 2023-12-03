@@ -1,6 +1,6 @@
 // navigation
 
-
+Fancybox.bind()
 
 var mainNav = document.querySelector ("#mainNav");
 var burgerBtn = document.querySelector("#burger button");
