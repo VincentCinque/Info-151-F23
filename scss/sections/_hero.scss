@@ -1,0 +1,28 @@
+/* =============
+    Hero
+============= */
+#bottom{
+    
+
+    img{
+        background-image: "..img/hero.jpg";
+        border: 1px solid gray;
+        border-radius: 50%;
+        max-width: 250px;
+        max-height: 250px;
+        object-fit: cover;
+        //max-height: 664px;
+
+        
+    }
+
+    p{
+        display: flex;
+        justify-content: center;
+        max-width: 288px;
+        max-height: 295px;
+        padding: 10px;
+        font-size: 18px;
+        margin-left: 16px;
+    }
+}

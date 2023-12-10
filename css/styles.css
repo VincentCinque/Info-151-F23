@@ -13,6 +13,7 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --orange: #D87337;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -366,3 +367,54 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: var(--orange);
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". logo . cr";
+  -ms-grid-columns: 75% auto;
+  grid-template-columns: 75% auto;
+}
+#footer img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  display: -ms-grid;
+  display: grid;
+  grid-area: logo;
+  margin-left: 23px;
+  margin-top: 4px;
+}
+#footer p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  display: -ms-grid;
+  display: grid;
+  grid-area: cr;
+  color: var(--white);
+}
+
+/* =============
+    Hero
+============= */
+#bottom img {
+  background-image: "..img/hero.jpg";
+  border: 1px solid gray;
+  border-radius: 50%;
+  max-width: 250px;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#bottom p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 288px;
+  max-height: 295px;
+  padding: 10px;
+  font-size: 18px;
+  margin-left: 16px;
+}

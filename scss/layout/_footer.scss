@@ -1,3 +1,26 @@
 /* =============
     Footer
 ============= */
+
+#footer{
+    background-color: var(--orange);
+    display: grid;
+    grid-template-areas: ". logo . cr";
+    grid-template-columns: 75% auto;
+
+    img{
+        display: grid;
+        grid-area: logo;
+        margin-left: 23px;
+        margin-top: 4px;
+
+    }
+
+    p{
+        display: grid;
+        grid-area: cr;
+        color: var(--white);
+    }
+
+
+}
