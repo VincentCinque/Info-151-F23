@@ -1,28 +1,77 @@
 /* =============
     Hero
 ============= */
-#bottom{
+
+
+#hero{
+
+    h1{
+        color: var(--white);
+    }
     
-
     img{
-        background-image: "..img/hero.jpg";
-        border: 1px solid gray;
-        border-radius: 50%;
-        max-width: 250px;
-        max-height: 250px;
-        object-fit: cover;
-        //max-height: 664px;
+        max-width: 100%;
+    }
+}
 
-        
+#believe-left{
+    img{
+        max-width: 100%;
+    }
+}
+
+
+#hero-2{
+    img{
+        max-width: 100%;
+        margin-bottom: 34px;
     }
 
+    h1{
+        color: var(--orange);
+        text-align: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 35px;
+        font-weight: 600;
+        padding: 15px;
+    }
+}
+
+#main-gallery{
+    
+    img{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+#bottom{
+
+    img{
+        background-size: cover;
+        width: 375px;
+        height: 375px;
+        border: 1px solid gray;
+        border-radius: 100%;  
+        object-fit: cover;
+        margin-left: 10px;
+    }
+  
     p{
-        display: flex;
-        justify-content: center;
-        max-width: 288px;
+        display: block;
+        text-align: justify;
+        max-width: 100%;
         max-height: 295px;
         padding: 10px;
-        font-size: 18px;
-        margin-left: 16px;
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 50px;
+        margin-right: 60px;
+        margin-bottom: 51px;
     }
 }
