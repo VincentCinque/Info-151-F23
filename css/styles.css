@@ -397,8 +397,9 @@ textarea {
 /* =============
     Hero
 ============= */
-#hero h1 {
-  color: var(--white);
+#hero {
+  background-image: url("..img/hero.jpg") h1;
+  background-image-color: var(--white);
 }
 #hero img {
   max-width: 100%;
@@ -406,6 +407,8 @@ textarea {
 
 #believe-left img {
   max-width: 100%;
+  margin-bottom: 34px;
+  margin-top: 20px;
 }
 
 #hero-2 img {

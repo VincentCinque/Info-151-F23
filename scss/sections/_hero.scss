@@ -4,6 +4,7 @@
 
 
 #hero{
+    background-image: url("..img/hero.jpg")
 
     h1{
         color: var(--white);
@@ -17,6 +18,8 @@
 #believe-left{
     img{
         max-width: 100%;
+        margin-bottom: 34px;
+        margin-top: 20px;
     }
 }
 
