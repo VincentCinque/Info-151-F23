@@ -390,6 +390,11 @@ textarea {
   margin-left: 23px;
   margin-top: 4px;
 }
+@media (min-width: 1200px) {
+  #footer img {
+    margin-left: 67%;
+  }
+}
 #footer p {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
@@ -398,6 +403,12 @@ textarea {
   grid-area: cr;
   color: var(--white);
   padding-top: 10px;
+}
+@media (min-width: 1200px) {
+  #footer p {
+    margin-left: 60%;
+    margin-bottom: 2%;
+  }
 }
 
 /* =============
@@ -582,7 +593,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   #main-gallery img {
-    width: 100%;
+    width: 95%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -607,12 +618,12 @@ textarea {
 }
 @media (min-width: 1200px) {
   #main-gallery-two img {
-    width: 100%;
+    width: 98%;
     height: 100%;
     max-height: 400px;
     -o-object-fit: cover;
        object-fit: cover;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 0;
     margin-top: 0;
   }

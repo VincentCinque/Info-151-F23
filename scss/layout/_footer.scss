@@ -9,11 +9,17 @@
     grid-template-columns: 75% auto;
     max-width: 100%;
 
+    
+
     img{
         display: grid;
         grid-area: logo;
         margin-left: 23px;
         margin-top: 4px;
+
+        @include xl{
+            margin-left: 67%;
+        }
 
     }
 
@@ -22,6 +28,11 @@
         grid-area: cr;
         color: var(--white);
         padding-top: 10px;
+        
+        @include xl{
+            margin-left: 60%;
+            margin-bottom: 2%;
+        }
     }
 
 
