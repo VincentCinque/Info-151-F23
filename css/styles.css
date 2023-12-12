@@ -622,8 +622,8 @@ textarea {
   #bottom-grid-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% auto;
-    grid-template-columns: 50% auto;
+    -ms-grid-columns: 30% auto;
+    grid-template-columns: 30% auto;
   }
 }
 
@@ -633,11 +633,23 @@ textarea {
   height: 375px;
   border: 1px solid gray;
   border-radius: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
   margin-left: 10px;
 }
-#bottom p {
+@media (min-width: 1200px) {
+  #bottom img {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    width: 700px;
+    height: 700px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+
+#para p {
   display: block;
   text-align: justify;
   max-width: 100%;
@@ -648,4 +660,15 @@ textarea {
   margin-left: 50px;
   margin-right: 60px;
   margin-bottom: 51px;
+}
+@media (min-width: 1200px) {
+  #para p {
+    padding-top: 10%;
+    padding-right: 10%;
+    font-size: 230%;
+    padding-bottom: 10%;
+    margin-left: 20%;
+    margin-top: 7%;
+    font-weight: 300;
+  }
 }
